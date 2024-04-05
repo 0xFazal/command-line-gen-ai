@@ -9,14 +9,17 @@ However, navigating the browser interface for a chatbot is painful for people wh
 Rejoice now that your generative AI chatbot, built using **Google's** Large Language Model(LLM) **Gemini Pro**, can be executed from your command line with this program.
 
 ## Setup:
+
 ### Requirements:
 - Python 3.9+
+
 ### Installation:
 -   Create a virtual environment (if you prefer to)
     ```
     python3 -m venv myenv
     ```
--  Activate virtual environment
+
+-  Activate virtual environment:
     -   On Unix or MacOS:
         ```
         source myenv/bin/activate
@@ -25,6 +28,7 @@ Rejoice now that your generative AI chatbot, built using **Google's** Large Lang
         ```
         myenv\Scripts\activate
         ```
+
 - Install required packages:
     ```
     pip install -r requirements.txt
@@ -35,16 +39,22 @@ This program is built using **Google's** Large Language Model(LLM) **Gemini Pro*
 Copy your API Key and paste it into .env file.
 
 ## Start Chatting
-- For most use case cases, running main.py without arguments is sufficient.
+- For most use case cases, running main.py without arguments is sufficient:
     ```
     python3 main.py
     ```
-- If you're not satisfied with the response and like to see various responses, you can change the temperature by providing it as a command line argument.
+
+- If you're not satisfied with the response and like to see various responses, you can change the temperature by providing it as a command line argument:
     ```
     python3 main.py 0.5
     ```
     Temperature config ranges from 0.0 to 1.0, default is 0.9. You can read more about how temperature impacts your responses [here](https://ai.stackexchange.com/questions/32477/what-is-the-temperature-in-the-gpt-models).
 
-> **Tip:** You can set bash or zsh alias 'ai' for executing the above commands so that its handy to start the bot.
+- Optional: If you forked this project and want to remove .env file from tacking, execute this:
+    ```
+    git update-index --skip-worktree .env
+    ```
+
+> **Tip:** You can set bash or zsh alias 'ai' for executing the above commands so that it's handy to start the bot.
 
 Visit https://fazal.me for more info about me.
