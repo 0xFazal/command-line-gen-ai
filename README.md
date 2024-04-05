@@ -47,4 +47,4 @@ Copy your API Key and paste it into .env file.
 
 > **Tip:** You can set bash or zsh alias 'ai' for executing the above commands so that its handy to start the bot.
 
-Visit fazal.me for more info about me.
+Visit https://fazal.me for more info about me.
