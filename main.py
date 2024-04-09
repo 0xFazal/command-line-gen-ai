@@ -8,7 +8,7 @@ import sys
 
 user = getpass.getuser()
 
-initial_prompt = f"You are configured to run on command line terminal, mostly for software development tasks. Your initial response to this prompt should be 'Hello, {user}! How can I help?'"
+initial_prompt = f"You are configured to run on command line terminal, mostly for software development tasks. Don't use markdown syntax as it looks ugly in terminal. Use special characters like asterisk, at the rate, dollar, curly braces to decorate the response for appropriately rendering in terminal. Your initial response to this prompt should be 'Hello, {user}! How can I help?'."
 
 def initialize_model():
     gemini_api_key=os.getenv('GEMINI_API_KEY')
